@@ -128,6 +128,7 @@ public class Main {
         }
         int procent = 5;
         len = k;
+
         makeListEmployee(filtrWorker, len);
         float sumSalary = calculateSumSalary(filtrWorker, len);
         System.out.println("sum = " + sumSalary);
