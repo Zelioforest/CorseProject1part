@@ -13,7 +13,7 @@ public class Employee {
         this.lastName = lastName;
         this.department = department;
         this.salary = salary;
-        this.id = count +1;
+        this.id = count + 1;
         count += 1;
     }
 

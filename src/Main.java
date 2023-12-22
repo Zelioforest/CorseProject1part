@@ -2,6 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+
         int size = 10;
         Employee[] worker = new Employee[10];
 
@@ -20,6 +21,7 @@ public class Main {
         float randomSalary = 6500f;
         int procent = 10;
         int lenEmployee = worker.length;
+
         makeListEmployee(worker, lenEmployee);
         float sumSalary = calculateSumSalary(worker, lenEmployee);
         System.out.println("sum = " + sumSalary);
@@ -28,7 +30,7 @@ public class Main {
         calculateAvgSalary(sumSalary, lenEmployee);
         getListFio(worker, lenEmployee);
         indexingSalary(worker, lenEmployee, procent);
-       calcSixMethodsDepartment(worker, lenEmployee, numberDepartment);
+        calcSixMethodsDepartment(worker, lenEmployee, numberDepartment);
         getSalaryLess(worker, lenEmployee, randomSalary);
         getSalaryMore(worker, lenEmployee, randomSalary);
     }
