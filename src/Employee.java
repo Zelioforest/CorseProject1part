@@ -2,7 +2,7 @@ public class Employee {
     public static int count;
     private int id;
     private String name;
-    private String pytronymic;
+    private String middleName;
     private String lastName;
     private int department;
     private float salary;
@@ -12,7 +12,7 @@ public class Employee {
     public Employee(String name, String pytronymic, String lastName, int department, float salary) {
 
         this.name = name;
-        this.pytronymic = pytronymic;
+        this.middleName = middleName;
         this.lastName = lastName;
         this.department = department;
         this.salary = salary;
@@ -24,8 +24,8 @@ public class Employee {
         return name;
     }
 
-    public String getSurname() {
-        return pytronymic;
+    public String getMiddleName() {
+        return middleName;
     }
 
     public String getLastName() {
@@ -56,7 +56,7 @@ public class Employee {
     @Override
     public String toString() {
         return  "name = '" + name + '\'' +
-                ", pytronymic = '" + pytronymic + '\'' +
+                ", middleName = '" + middleName + '\'' +
                 ", lastName = '" + lastName + '\'' +
                 ", department = " + department +
                 ", salary = " + salary;

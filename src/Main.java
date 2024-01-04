@@ -126,7 +126,13 @@ public class Main {
 
     public static void calculateAvgSalary(int numberDepartment) {
         float sumSalary = calculateSumSalary(numberDepartment);
-        float avgSalary = sumSalary / worker.length;
+        int kolWorker = 0;
+        for (int j = 0; j < worker.length; j++) {
+            if (worker[j].getDepartment() == numberDepartment) {
+                kolWorker += 1;
+            }
+        }
+        float avgSalary = sumSalary / kolWorker;
         System.out.println("avgSalary = " + avgSalary);
     }
 
@@ -151,7 +157,7 @@ public class Main {
     public static void getListFio() {
         for (int i = 0; i < worker.length; i++) {
             System.out.println((i + 1) + "  " + worker[i].getName() + ' ' +
-                    worker[i].getSurname() + ' ' + worker[i].getLastName());
+                    worker[i].getMiddleName() + ' ' + worker[i].getLastName());
         }
     }
 
@@ -159,7 +165,7 @@ public class Main {
         for (int i = 0; i < worker.length; i++) {
             if (worker[i].getDepartment() == numberDepartment) {
                 System.out.println((i + 1) + "  " + worker[i].getName() + ' ' +
-                        worker[i].getSurname() + ' ' + worker[i].getLastName());
+                        worker[i].getMiddleName() + ' ' + worker[i].getLastName());
             }
         }
     }
